@@ -222,8 +222,17 @@ footer { border-top: 1px solid var(--border); position: relative; z-index: 1; ma
     <h3>2.3 Sitio web público (acceso anticipado)</h3>
     <p>Cuando completás el formulario de acceso anticipado recopilamos nombre, email, teléfono y empresa. Estos datos se gestionan a través de <a href="https://loops.so" target="_blank" rel="noopener">Loops</a> para nuestras comunicaciones de pre-lanzamiento.</p>
 
-    <h3>2.4 Información técnica</h3>
-    <p>Actualmente <strong>no utilizamos herramientas de analítica</strong> (como Google Analytics, Mixpanel u otras) ni recopilamos tu IP, navegador o sistema operativo con fines de seguimiento. Solo se usan las cookies técnicas necesarias para mantener tu sesión autenticada, gestionadas por Clerk.</p>
+    <h3>2.4 Información técnica y analítica</h3>
+    <p>Utilizamos <strong>Google Analytics (GA4)</strong> para entender cómo se usa la plataforma y mejorar el producto. A través de esta herramienta se recopila, de forma agregada:</p>
+    <ul>
+      <li>Dirección IP (truncada por Google antes de su almacenamiento).</li>
+      <li>Tipo de dispositivo, navegador y sistema operativo.</li>
+      <li>Páginas y pantallas visitadas dentro del app y del sitio.</li>
+      <li>Eventos de interacción (clics, navegación, duración de sesión).</li>
+      <li>Identificadores de cliente de Google Analytics (cookies de primera parte).</li>
+    </ul>
+    <p>Además, Clerk establece las cookies técnicas necesarias para mantener tu sesión autenticada.</p>
+    <p>Podés optar por no ser medido por Google Analytics instalando el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">complemento oficial de inhabilitación</a> en tu navegador.</p>
 
     <h2>3. Cómo usamos tu información</h2>
     <ul>
@@ -238,6 +247,7 @@ footer { border-top: 1px solid var(--border); position: relative; z-index: 1; ma
     <p>El corazón de Plato es un asistente conversacional impulsado por modelos de lenguaje de <strong>OpenAI</strong>. Esto implica que:</p>
     <ul>
       <li>El contenido de tus mensajes y el contexto necesario de la conversación se envían a OpenAI para generar respuestas.</li>
+      <li>Si usás el botón de micrófono, el audio grabado se envía a OpenAI (Whisper) para transcribirlo a texto.</li>
       <li>Cuando el asistente analiza imágenes (por ejemplo, una foto de una fachada o un Street View), esas imágenes se envían a OpenAI para su procesamiento.</li>
       <li>OpenAI procesa estos datos en servidores fuera de Argentina, bajo sus propias políticas. Podés consultarlas en <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">openai.com/policies/privacy-policy</a>.</li>
       <li>No enviamos a OpenAI tu nombre, email ni datos de cuenta junto con las consultas.</li>
@@ -250,7 +260,8 @@ footer { border-top: 1px solid var(--border); position: relative; z-index: 1; ma
     <p>No vendemos tus datos personales. Los terceros con los que compartimos información son:</p>
     <ul>
       <li><strong>Clerk</strong>: autenticación y gestión de sesiones.</li>
-      <li><strong>OpenAI</strong>: procesamiento de consultas e imágenes (ver sección 4).</li>
+      <li><strong>OpenAI</strong>: procesamiento de consultas, audio e imágenes (ver sección 4).</li>
+      <li><strong>Google Analytics (GA4)</strong>: medición agregada de uso del sitio y del app (ver sección 2.4).</li>
       <li><strong>Google Maps</strong>: visualización de mapas y Street View. Las coordenadas de las propiedades se envían a Google.</li>
       <li><strong>Mapbox</strong>: visualización interactiva de mapas.</li>
       <li><strong>Loops</strong>: gestión de la lista de espera del sitio público.</li>
@@ -259,13 +270,19 @@ footer { border-top: 1px solid var(--border); position: relative; z-index: 1; ma
     </ul>
 
     <h2>7. Cookies</h2>
-    <p>Solo utilizamos cookies técnicas estrictamente necesarias para mantener tu sesión autenticada (gestionadas por Clerk). No usamos cookies publicitarias, de analítica ni de seguimiento.</p>
+    <p>Usamos dos tipos de cookies:</p>
+    <ul>
+      <li><strong>Técnicas</strong>: necesarias para mantener tu sesión autenticada, gestionadas por Clerk.</li>
+      <li><strong>Analíticas</strong>: cookies de primera parte establecidas por Google Analytics para medir el uso agregado del sitio y del app.</li>
+    </ul>
+    <p>No usamos cookies publicitarias ni de seguimiento de terceros. Podés inhabilitar las cookies analíticas mediante el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">complemento de inhabilitación de Google Analytics</a> o configurando tu navegador.</p>
 
     <h2>8. Seguridad de los datos</h2>
     <p>Implementamos medidas técnicas y organizativas razonables para proteger tus datos contra el acceso no autorizado, la pérdida, la alteración o la divulgación. Ningún sistema es completamente seguro, por lo que no podemos garantizar la seguridad absoluta de la información transmitida por internet.</p>
 
-    <h2>9. Retención de datos</h2>
-    <p>Conservamos tu cuenta, conversaciones, búsquedas, favoritos y perfil inferido mientras tu cuenta siga activa. Si querés que eliminemos tu cuenta y los datos asociados, podés solicitarlo escribiéndonos a la dirección de contacto y procederemos en un plazo razonable, salvo que debamos retenerlos para cumplir obligaciones legales.</p>
+    <h2>9. Retención y eliminación de datos</h2>
+    <p>Conservamos tu cuenta, conversaciones, búsquedas, favoritos y perfil inferido mientras tu cuenta siga activa. Podés eliminar tu cuenta y todos los datos asociados en cualquier momento desde <a href="https://app.plato.com.ar/delete-account" target="_blank" rel="noopener">app.plato.com.ar/delete-account</a>, o escribiéndonos a la dirección de contacto.</p>
+    <p>Una vez confirmada la eliminación, los datos se borran inmediatamente de nuestra base de datos. Las copias de respaldo automáticas pueden conservar la información hasta 30 días adicionales antes de su purga. Los datos agregados y anonimizados que no permiten identificarte pueden conservarse con fines analíticos.</p>
 
     <h2>10. Tus derechos</h2>
     <p>De acuerdo con la Ley 25.326 de Protección de Datos Personales de la República Argentina, tenés derecho a:</p>
