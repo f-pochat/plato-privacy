@@ -194,70 +194,101 @@ footer { border-top: 1px solid var(--border); position: relative; z-index: 1; ma
     <div class="updated">Última actualización: 16 de abril de 2026</div>
 
     <h2>1. Introducción</h2>
-    <p>En <strong>Plato</strong> ("nosotros", "la empresa" o "el servicio") respetamos tu privacidad y nos comprometemos a proteger los datos personales que compartís con nosotros. Esta Política de Privacidad explica qué información recopilamos, cómo la utilizamos y cuáles son tus derechos respecto de ella.</p>
-    <p>Al utilizar nuestro sitio web, solicitar acceso anticipado o interactuar con nuestros servicios, aceptás las prácticas descriptas en esta política.</p>
+    <p>En <strong>Plato</strong> ("nosotros", "la empresa" o "el servicio") respetamos tu privacidad. Esta política describe qué datos recopilamos a través de nuestro sitio web público y de la plataforma Plato, cómo los usamos y cuáles son tus derechos.</p>
+    <p>Al solicitar acceso anticipado, crear una cuenta o utilizar nuestros servicios, aceptás las prácticas descriptas en esta política.</p>
 
     <h2>2. Información que recopilamos</h2>
-    <p>Recopilamos la siguiente información cuando solicitás acceso anticipado o interactuás con el sitio:</p>
+
+    <h3>2.1 Cuenta y datos de contacto</h3>
+    <p>Utilizamos <a href="https://clerk.com" target="_blank" rel="noopener">Clerk</a> como proveedor de autenticación. Cuando creás una cuenta recopilamos:</p>
     <ul>
-      <li><strong>Datos de contacto:</strong> nombre, dirección de correo electrónico y número de teléfono.</li>
-      <li><strong>Información profesional:</strong> nombre de la inmobiliaria u organización a la que pertenecés, si decidís compartirlo.</li>
-      <li><strong>Datos de navegación:</strong> dirección IP, tipo de navegador, sistema operativo, páginas visitadas y tiempo de permanencia, recopilados de forma automática mediante cookies y tecnologías similares.</li>
-      <li><strong>Datos de uso:</strong> interacciones con el formulario de acceso anticipado y otras funciones del sitio.</li>
+      <li>Dirección de correo electrónico.</li>
+      <li>Nombre.</li>
+      <li>Número de teléfono, si lo completás durante el alta.</li>
+      <li>Nombre de la inmobiliaria u organización, si decidís compartirlo.</li>
+      <li>Identificadores provistos por terceros si iniciás sesión mediante un proveedor externo (por ejemplo, Google).</li>
     </ul>
+
+    <h3>2.2 Información generada al usar el servicio</h3>
+    <p>Para que la plataforma funcione y mejorar tu experiencia, almacenamos:</p>
+    <ul>
+      <li><strong>Conversaciones y mensajes</strong> con el asistente, incluyendo el texto que enviás y las respuestas generadas.</li>
+      <li><strong>Búsquedas</strong> que realizás y sus parámetros (tipo de propiedad, zona, rango de precios, etc.).</li>
+      <li><strong>Favoritos</strong>: propiedades y conversaciones que guardás.</li>
+      <li><strong>Perfil inferido</strong>: a partir del análisis de tus interacciones construimos un perfil para entender tus preferencias y personalizar resultados.</li>
+      <li><strong>Imágenes</strong> que eventualmente adjuntes (por ejemplo, capturas de propiedades) para su procesamiento.</li>
+    </ul>
+
+    <h3>2.3 Sitio web público (acceso anticipado)</h3>
+    <p>Cuando completás el formulario de acceso anticipado recopilamos nombre, email, teléfono y empresa. Estos datos se gestionan a través de <a href="https://loops.so" target="_blank" rel="noopener">Loops</a> para nuestras comunicaciones de pre-lanzamiento.</p>
+
+    <h3>2.4 Información técnica</h3>
+    <p>Actualmente <strong>no utilizamos herramientas de analítica</strong> (como Google Analytics, Mixpanel u otras) ni recopilamos tu IP, navegador o sistema operativo con fines de seguimiento. Solo se usan las cookies técnicas necesarias para mantener tu sesión autenticada, gestionadas por Clerk.</p>
 
     <h2>3. Cómo usamos tu información</h2>
-    <p>Utilizamos tus datos para los siguientes fines:</p>
     <ul>
-      <li>Gestionar tu solicitud de acceso anticipado a la plataforma.</li>
-      <li>Comunicarnos con vos sobre el lanzamiento, novedades y actualizaciones del producto.</li>
-      <li>Mejorar nuestros servicios, la experiencia del usuario y el funcionamiento del sitio.</li>
-      <li>Cumplir con obligaciones legales y regulatorias aplicables.</li>
-      <li>Prevenir fraudes y proteger la seguridad de nuestros usuarios y sistemas.</li>
+      <li>Operar la plataforma: autenticación, persistencia de tus conversaciones, búsquedas y favoritos.</li>
+      <li>Procesar tus consultas mediante modelos de inteligencia artificial (ver sección 4).</li>
+      <li>Personalizar resultados y recomendaciones según tu historial y perfil inferido.</li>
+      <li>Comunicarnos con vos sobre el servicio, novedades y actualizaciones.</li>
+      <li>Cumplir con obligaciones legales y proteger la seguridad de la plataforma.</li>
     </ul>
 
-    <h2>4. Base legal del tratamiento</h2>
-    <p>Tratamos tus datos personales con base en tu consentimiento explícito, el cumplimiento de obligaciones contractuales derivadas del uso del servicio, y nuestros intereses legítimos en mejorar el producto y comunicarnos con potenciales usuarios.</p>
-
-    <h2>5. Compartir información con terceros</h2>
-    <p>No vendemos tus datos personales. Podemos compartir información con:</p>
+    <h2>4. Procesamiento con inteligencia artificial</h2>
+    <p>El corazón de Plato es un asistente conversacional impulsado por modelos de lenguaje de <strong>OpenAI</strong>. Esto implica que:</p>
     <ul>
-      <li><strong>Proveedores de servicios:</strong> utilizamos herramientas de terceros como <a href="https://loops.so" target="_blank" rel="noopener">Loops</a> para la gestión de nuestra lista de correo y comunicaciones.</li>
-      <li><strong>Autoridades competentes:</strong> cuando sea requerido por ley, orden judicial o para proteger nuestros derechos legales.</li>
-      <li><strong>Sucesores comerciales:</strong> en caso de fusión, adquisición o venta de activos, sujeto a las mismas obligaciones de confidencialidad.</li>
+      <li>El contenido de tus mensajes y el contexto necesario de la conversación se envían a OpenAI para generar respuestas.</li>
+      <li>Cuando el asistente analiza imágenes (por ejemplo, una foto de una fachada o un Street View), esas imágenes se envían a OpenAI para su procesamiento.</li>
+      <li>OpenAI procesa estos datos en servidores fuera de Argentina, bajo sus propias políticas. Podés consultarlas en <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">openai.com/policies/privacy-policy</a>.</li>
+      <li>No enviamos a OpenAI tu nombre, email ni datos de cuenta junto con las consultas.</li>
     </ul>
 
-    <h2>6. Cookies y tecnologías similares</h2>
-    <p>Utilizamos cookies y tecnologías similares para mejorar tu experiencia, recordar tus preferencias y analizar el uso del sitio. Podés configurar tu navegador para rechazar cookies, aunque esto puede afectar el funcionamiento de algunas partes del sitio.</p>
+    <h2>5. Base legal del tratamiento</h2>
+    <p>Tratamos tus datos con base en tu consentimiento, el cumplimiento del contrato derivado del uso del servicio y nuestros intereses legítimos en operar y mejorar la plataforma.</p>
 
-    <h2>7. Seguridad de los datos</h2>
-    <p>Implementamos medidas técnicas y organizativas razonables para proteger tus datos contra el acceso no autorizado, la pérdida, la alteración o la divulgación. Sin embargo, ningún sistema es completamente seguro y no podemos garantizar la seguridad absoluta de la información transmitida a través de internet.</p>
+    <h2>6. Compartir información con terceros</h2>
+    <p>No vendemos tus datos personales. Los terceros con los que compartimos información son:</p>
+    <ul>
+      <li><strong>Clerk</strong>: autenticación y gestión de sesiones.</li>
+      <li><strong>OpenAI</strong>: procesamiento de consultas e imágenes (ver sección 4).</li>
+      <li><strong>Google Maps</strong>: visualización de mapas y Street View. Las coordenadas de las propiedades se envían a Google.</li>
+      <li><strong>Mapbox</strong>: visualización interactiva de mapas.</li>
+      <li><strong>Loops</strong>: gestión de la lista de espera del sitio público.</li>
+      <li><strong>Autoridades competentes</strong>: cuando sea requerido por ley u orden judicial.</li>
+      <li><strong>Sucesores comerciales</strong>: en caso de fusión, adquisición o venta de activos, sujeto a las mismas obligaciones de confidencialidad.</li>
+    </ul>
 
-    <h2>8. Retención de datos</h2>
-    <p>Conservamos tus datos personales únicamente durante el tiempo necesario para cumplir con los fines descriptos en esta política, cumplir obligaciones legales o resolver controversias. Una vez cumplido ese plazo, los datos se eliminan o anonimizan de forma segura.</p>
+    <h2>7. Cookies</h2>
+    <p>Solo utilizamos cookies técnicas estrictamente necesarias para mantener tu sesión autenticada (gestionadas por Clerk). No usamos cookies publicitarias, de analítica ni de seguimiento.</p>
 
-    <h2>9. Tus derechos</h2>
+    <h2>8. Seguridad de los datos</h2>
+    <p>Implementamos medidas técnicas y organizativas razonables para proteger tus datos contra el acceso no autorizado, la pérdida, la alteración o la divulgación. Ningún sistema es completamente seguro, por lo que no podemos garantizar la seguridad absoluta de la información transmitida por internet.</p>
+
+    <h2>9. Retención de datos</h2>
+    <p>Conservamos tu cuenta, conversaciones, búsquedas, favoritos y perfil inferido mientras tu cuenta siga activa. Si querés que eliminemos tu cuenta y los datos asociados, podés solicitarlo escribiéndonos a la dirección de contacto y procederemos en un plazo razonable, salvo que debamos retenerlos para cumplir obligaciones legales.</p>
+
+    <h2>10. Tus derechos</h2>
     <p>De acuerdo con la Ley 25.326 de Protección de Datos Personales de la República Argentina, tenés derecho a:</p>
     <ul>
       <li><strong>Acceder</strong> a los datos personales que tenemos sobre vos.</li>
       <li><strong>Rectificar</strong> datos inexactos o incompletos.</li>
       <li><strong>Solicitar la supresión</strong> de tus datos cuando dejen de ser necesarios.</li>
-      <li><strong>Oponerte</strong> al tratamiento de tus datos en determinadas circunstancias.</li>
+      <li><strong>Oponerte</strong> al tratamiento en determinadas circunstancias.</li>
       <li><strong>Retirar tu consentimiento</strong> en cualquier momento, sin afectar la licitud del tratamiento previo.</li>
     </ul>
-    <p>La Agencia de Acceso a la Información Pública (AAIP) es el órgano de control de la Ley 25.326 y tiene la facultad de atender denuncias y reclamos relacionados con el cumplimiento de las normas sobre protección de datos personales.</p>
+    <p>La Agencia de Acceso a la Información Pública (AAIP) es el órgano de control de la Ley 25.326 y puede atender denuncias y reclamos sobre protección de datos personales.</p>
 
-    <h2>10. Transferencias internacionales</h2>
-    <p>Algunos de nuestros proveedores pueden procesar datos fuera de Argentina. En esos casos, nos aseguramos de que existan garantías adecuadas para proteger tus datos conforme a la normativa aplicable.</p>
+    <h2>11. Transferencias internacionales</h2>
+    <p>Varios de nuestros proveedores (Clerk, OpenAI, Google, Mapbox, Loops) procesan datos fuera de Argentina, principalmente en Estados Unidos. Nos aseguramos de que cuenten con estándares razonables de seguridad y privacidad.</p>
 
-    <h2>11. Menores de edad</h2>
-    <p>Nuestros servicios están dirigidos a mayores de 18 años. No recopilamos intencionalmente datos de menores de edad. Si detectamos que hemos recibido información de un menor, la eliminaremos de nuestros registros.</p>
+    <h2>12. Menores de edad</h2>
+    <p>Nuestros servicios están dirigidos a mayores de 18 años. No recopilamos intencionalmente datos de menores. Si detectamos información de un menor, la eliminaremos de nuestros registros.</p>
 
-    <h2>12. Cambios en esta política</h2>
-    <p>Podemos actualizar esta Política de Privacidad periódicamente. La versión vigente será la publicada en esta página, con la fecha de última actualización indicada al inicio. Te recomendamos revisarla de tanto en tanto.</p>
+    <h2>13. Cambios en esta política</h2>
+    <p>Podemos actualizar esta política periódicamente. La versión vigente será la publicada en esta página, con la fecha de última actualización indicada al inicio. Te recomendamos revisarla de tanto en tanto.</p>
 
     <div class="contact-card">
-      <h2>13. Contacto</h2>
+      <h2>14. Contacto</h2>
       <p>Si tenés preguntas, reclamos o querés ejercer tus derechos sobre tus datos personales, podés escribirnos a:</p>
       <p><strong>Correo:</strong> <a href="mailto:privacidad@plato.com.ar">privacidad@plato.com.ar</a><br>
       <strong>Ubicación:</strong> Buenos Aires, Argentina</p>
